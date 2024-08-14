@@ -63,7 +63,16 @@
 /* ===============================================
     General
 ------------------------*/
+/* Custom CSS Variables */
+:root {
+    --dark-bg: hsl(47, 77%, 12%); /* previous-value: #073.626 */
+    --light-bg: hsl(47, 68%, 25%); /* previous-value: #146.94d */
+    --light-text: hsl(47, 50%, 30%); /* previous-value: #497.326 */
+}
 
+.bg-\[\#264f41\] {
+    background-color: hsl(47, 35%, 23%);
+}
 /** Variables **/
 article,
 aside,
@@ -83,14 +92,14 @@ a:focus {
 }
 a:focus,
 a:hover {
-    color: #14694d;
+    color: var(--light-bg);
     text-decoration: none;
 }
 a,
 button,
 input {
     outline: medium none;
-    color: #14694d;
+    color: var(--light-bg);
 }
 ol,
 ul {
@@ -111,17 +120,17 @@ p {
 }
 
 *::-moz-selection {
-    background: #14694d;
+    background: var(--light-bg);
     color: #fff;
     text-shadow: none;
 }
 ::-moz-selection {
-    background: #14694d;
+    background: var(--light-bg);
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: #14694d;
+    background: var(--light-bg);
     color: #fff;
     text-shadow: none;
 }
@@ -241,7 +250,7 @@ h6 {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
     font-weight: 600;
-    color: #073626;
+    color: var(--dark-bg);
 }
 h1 {
     font-size: 45px;
@@ -385,7 +394,7 @@ body .page.sidebar-true .site-main {
 }
 
 a {
-    color: #073626;
+    color: var(--dark-bg);
 }
 
 .alignleft {
@@ -1027,7 +1036,7 @@ ul.ttm-our-location-list li i,
 .featured-icon-box.style14 .featured-desc p,
 .featured-imagebox-portfolio-style1 .featured-title h5 a:hover,
 .ttm-blog-classic .ttm-blog-classic-content blockquote:before {
-    color: #497326;
+    color: var(--light-text);
 }
 
 h1.ttm-textcolor-skincolor,
@@ -1036,7 +1045,7 @@ h3.ttm-textcolor-skincolor,
 h4.ttm-textcolor-skincolor,
 h5.ttm-textcolor-skincolor,
 h6.ttm-textcolor-skincolor {
-    color: #14694d !important;
+    color: var(--light-bg) !important;
 }
 
 /** Skin-bg-color **/
@@ -1128,7 +1137,7 @@ a.checkout-button:hover,
 .services-slide.owl-theme .owl-controls .owl-nav div:hover,
 .featured-imagebox-team.style2:hover .ttm-team-box-view-overlay,
 .color-trigger {
-    background-color: #14694d;
+    background-color: var(--light-bg);
 }
 
 /** Skin-border-color **/
@@ -1175,7 +1184,7 @@ input[type="color"]:focus,
 .ttm-tabs ul.tabs li.active a,
 .ttm-blog-classic .ttm-blog-classic-content blockquote,
 .ttm-header-icons .ttm-header-search-link a:hover {
-    border-color: #14694d !important;
+    border-color: var(--light-bg) !important;
 }
 .ttm-search-overlay,
 #site-header-menu #site-navigation .menu > ul,
@@ -1184,16 +1193,16 @@ input[type="color"]:focus,
 div.product ul.tabs li.active a:before,
 .coupon_toggle .coupon_code,
 #payment .payment_box {
-    border-top-color: #14694d !important;
+    border-top-color: var(--light-bg) !important;
 }
 .featured-imagebox-portfolio.ttm-box-view-top-image:hover
     .ttm-box-bottom-content:before {
-    border-color: transparent transparent #14694d transparent;
+    border-color: transparent transparent var(--light-bg) transparent;
 }
 .ttm-search-overlay .w-search-form-row:before,
 .featured-icon-box.style11,
 .testimonials.style2 .testimonial-content {
-    border-bottom-color: #14694d !important;
+    border-bottom-color: var(--light-bg) !important;
 }
 
 /** 2.DarkGrey-color **/
@@ -1233,7 +1242,7 @@ a.tp-caption.dark-text-button,
 .ttm-team-member-content .ttm-tabs.ttm-tab-style-horizontal ul.tabs li a,
 .ttm-bgcolor-skincolor .testimonials.style2 .testimonial-content blockquote,
 .ttm-bgcolor-skincolor .testimonials.style2 .testimonial-content h6 {
-    color: #073626;
+    color: var(--dark-bg);
 }
 
 /** DarkGrey-bg-color **/
@@ -1282,7 +1291,7 @@ a.checkout-button,
     ul
     li
     a:hover {
-    background-color: #073626;
+    background-color: var(--dark-bg);
 }
 .sidebar .widget .tagcloud a,
 .tp-caption.black-flatborder-button:hover,
@@ -1293,10 +1302,10 @@ a.checkout-button,
 .ttm-header-style-overlay .ttm-header-icons .ttm-header-cart-link a:hover,
 .featured-imagebox-team.featured-imagebox-team-details .featured-content-team,
 .ttm-header-icons .ttm-header-cart-link a:hover {
-    border-color: #073626 !important;
+    border-color: var(--dark-bg) !important;
 }
 .ttm-bgcolor-skincolor .testimonials.style2 .testimonial-content {
-    border-bottom-color: #073626 !important;
+    border-bottom-color: var(--dark-bg) !important;
 }
 
 /** 3.White-color **/
@@ -3246,30 +3255,30 @@ a {
 
 .investTable.blue .heading,
 .investTable.blue .price-value {
-    color: #14694d;
+    color: var(--light-bg);
 }
 
 .investTable.blue .investTable-signup a,
 .investTable.blue:hover .investTable-header {
-    background: #14694d;
+    background: var(--light-bg);
 }
 
 .investTable.blue .investTable-signup a:hover {
-    box-shadow: 0 0 10px #14694d;
+    box-shadow: 0 0 10px var(--light-bg);
 }
 
 .investTable.red .heading,
 .investTable.red .price-value {
-    color: #14694d;
+    color: var(--light-bg);
 }
 
 .investTable.red .investTable-signup a,
 .investTable.red:hover .investTable-header {
-    background: #14694d;
+    background: var(--light-bg);
 }
 
 .investTable.red .investTable-signup a:hover {
-    box-shadow: 0 0 10px #14694d;
+    box-shadow: 0 0 10px var(--light-bg);
 }
 
 .investTable.green .heading,
