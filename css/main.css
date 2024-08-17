@@ -66,13 +66,21 @@
 /* Custom CSS Variables */
 :root {
     --dark-bg: hsl(47, 77%, 12%); /* previous-value: #073.626 */
-    --light-bg: hsl(47, 68%, 25%); /* previous-value: #146.94d */
-    --light-text: hsl(47, 50%, 30%); /* previous-value: #497.326 */
+    --light-bg: #6c5914; /* previous-value: #146.94d */
+    --light-text: #736226; /* previous-value: #497.326 */
 }
 
 .bg-\[\#264f41\] {
-    background-color: hsl(47, 35%, 23%);
+    background-color: hsl(47, 35%, 23%) !important;
 }
+
+/* .gac-logo-container {
+    width: 100px;
+}
+
+.gac-logo-container img {
+    width: 100% !important;
+} */
 /** Variables **/
 article,
 aside,

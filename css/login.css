@@ -1,11 +1,19 @@
+:root {
+  --darker-bg: hsl(47, 77%, 8%);
+  --dark-bg: hsl(47, 77%, 12%); 
+  --light-bg: #6c5914;
+  --light-text: hsl(47, 50%, 30%);
+  --lighter-text: hsl(47, 50%, 80%);
+}
+
 /* login styles */
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgb(0,36,6);
-  background: radial-gradient(circle, 
+  background: var(--lighter-text);
+  /* background: radial-gradient(circle, 
     rgba(0,36,6,1) 5%, 
     rgba(0,0,0,1) 87%
-  );
+  ); */
   animation: expandBg 1s linear;
 }
 
@@ -76,12 +84,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #FFFFFA10;
+    background: var(--darker-bg) /* prev-value: #FFFFFA10 */;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     height: 60%;
-    border-radius: 10px;
+    border-radius: 5px;
     animation: slideDown 1s linear;
   }
   
@@ -135,9 +143,13 @@ body {
   
   .login-section-input label {
     text-transform: capitalize;
+    margin: 10px 0;
     color: #eee;
   }
-  
+  .login-section-input input::placeholder {
+    text-transform: capitalize;
+    font-size: .9em;
+  }
   .login-section-input input {
     color: #444;
     background-color: #f7f7f7;
@@ -145,7 +157,7 @@ body {
     font-weight: 500;
     border: none;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
   }
   
   .login-section-input .greyedOut {
@@ -163,7 +175,7 @@ body {
     border-radius: 10px;
     border: none;
     color: #eee;
-    background-color: limegreen;
+    background-color: var(--light-bg);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -177,7 +189,7 @@ body {
   .login-section-form .login-section-btn:active{
     outline: 2px solid #333;
     border: 1px solid #fff;
-    background-color: darkcyan;
+    background-color: var(--dark-bg);
   }
 
   .stale {
@@ -255,9 +267,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #FFFFFA10;
+    background: var(--darker-bg)/* prev-value: #FFFFFA10 */;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     height: 95%;
     border-radius: 10px;
@@ -325,13 +337,14 @@ body {
   .signup-form-group label {
     text-transform: capitalize;
     color: #eee;
+    margin: 10px 0;
   }
   
   .signup-section-input input,
   .signup-form-group input {
     background-color: #f7f7f7;
     color: #444;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     border: none;
     padding: 10px;
@@ -369,11 +382,12 @@ body {
     border-radius: 10px;
     border: none;
     color: #eee;
-    background-color: limegreen;
+    background-color: var(--light-bg);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 50ms ease-in-out;
+    text-transform: capitalize;
   }
   
   /* .signup-section-form .signup-section-btn:hover {
@@ -383,7 +397,7 @@ body {
   .signup-section-form .signup-section-btn:active{
     outline: 2px solid #333;
     border: 1px solid #fff;
-    background-color: darkcyan;
+    background-color: var(--dark-bg);
   }
   
   .signup-section-body .signup-section-link {
