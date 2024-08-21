@@ -2501,10 +2501,6 @@ ul.footer-nav-menu li:not(:last-child):after {
     background-position: center;
 }
 
-.ttm-page-title-row.shop { /** i made change here */
-    background-image: url(../images/banner-enhance-scaled.jpg);
-}
-
 div.ttm-page-title-row > .ttm-bg-layer {
     background-color: rgba(24, 35, 51, 0.85);
 }
