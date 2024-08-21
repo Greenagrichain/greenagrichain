@@ -65,7 +65,7 @@
 ------------------------*/
 /* Custom CSS Variables */
 :root {
-    --dark-bg: hsl(47, 77%, 12%); /* previous-value: #073.626 */
+    --dark-bg: #362c07; /* previous-value: #073.626 */
     --light-bg: #6c5914; /* previous-value: #146.94d */
     --light-text: #736226; /* previous-value: #497.326 */
 }
